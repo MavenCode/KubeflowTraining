@@ -1,5 +1,5 @@
 {
-  "title": "Kubeflow_Labs",
+  "title": "Kubeflow Labs",
   "description": "This course gives you a complete walkthrough on how to conquer Kubeflow",
   "courses": [
     {
@@ -8,9 +8,9 @@
       "description": "Learn how to deploy kubeflow on Microk8s"
     },
     {
-      "course_id": "Scenario 2",
-      "title": "Scenario 2",
-      "description": "The second Scenario"
+      "course_id": "Creating a Kubeflow Pipeline",
+      "title": "Creating a Kubeflow Pipeline",
+      "description": "A detailed walkthrough on how to build and deploy a pipeline"
     }
   ]
 }
