@@ -1,6 +1,6 @@
 {
-  "title": "Kf Serving",
-  "description": "Learn how to serve your models for production with Kf serving",
+  "title": "Tf Serving",
+  "description": "Learn how to serve your models for production with Tf serving",
   "difficulty": "Beginner",
   "time": "5 minutes",
   "details": {
