@@ -18,9 +18,9 @@
       "description": "Learn how to serve your models for production with Kf serving"
     },
     {
-      "course_id": "kf serving",
-      "title": "Kf Serving",
-      "description": "Learn how to serve your models for production with Kf serving"
+      "course_id": "Tf serving",
+      "title": "Tf Serving",
+      "description": "Learn how to serve your models for production with Tf serving"
     }
   ]
 }
