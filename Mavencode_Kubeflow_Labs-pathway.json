@@ -1,5 +1,11 @@
 {
   "title": "Kubeflow_Labs",
   "description": "This course gives you a complete walkthrough on how to conquer Kubeflow",
-  "courses": []
+  "courses": [
+    {
+      "course_id": "Deploy Kubeflow on Microk8s",
+      "title": "How to deploy kubeflow on Microk8s",
+      "description": "Learn how to deploy kubeflow on Microk8s"
+    }
+  ]
 }
