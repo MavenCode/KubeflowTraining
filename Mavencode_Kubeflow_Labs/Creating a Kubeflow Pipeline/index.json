@@ -1,0 +1,38 @@
+{
+  "title": "Creating a Kubeflow Pipeline",
+  "description": "A detailed walkthrough on how to build and deploy a pipeline",
+  "difficulty": "Beginner",
+  "time": "4 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeflow"
+  }
+}
