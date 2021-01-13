@@ -21,6 +21,11 @@
       "course_id": "Tf serving",
       "title": "Tf Serving",
       "description": "Learn how to serve your models for production with Tf serving"
+    },
+    {
+      "course_id": "Seldone Core",
+      "title": "Seldone Core",
+      "description": "Learn how to serve your models for production with Seldone Core"
     }
   ]
 }
