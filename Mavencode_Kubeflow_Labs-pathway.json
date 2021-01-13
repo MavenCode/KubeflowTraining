@@ -11,6 +11,16 @@
       "course_id": "Creating a Kubeflow Pipeline",
       "title": "Creating a Kubeflow Pipeline",
       "description": "A detailed walkthrough on how to build and deploy a pipeline"
+    },
+    {
+      "course_id": "Kf serving",
+      "title": "Kf Serving",
+      "description": "Learn how to serve your models for production with Kf serving"
+    },
+    {
+      "course_id": "kf serving",
+      "title": "Kf Serving",
+      "description": "Learn how to serve your models for production with Kf serving"
     }
   ]
 }
