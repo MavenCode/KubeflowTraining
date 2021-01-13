@@ -6,6 +6,11 @@
       "course_id": "Deploy Kubeflow on Microk8s",
       "title": "How to deploy kubeflow on Microk8s",
       "description": "Learn how to deploy kubeflow on Microk8s"
+    },
+    {
+      "course_id": "Scenario 2",
+      "title": "Scenario 2",
+      "description": "The second Scenario"
     }
   ]
 }
