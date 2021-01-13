@@ -1,6 +1,6 @@
 {
-  "title": "Scenario 2",
-  "description": "The second Scenario",
+  "title": "Tf serving",
+  "description": "Learn how to serve your models for production with Tf serving",
   "difficulty": "Beginner",
   "time": "4 minutes",
   "details": {
