@@ -33,6 +33,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "ubuntu:2004"
+    "imageid": "nodejs:12"
   }
 }
