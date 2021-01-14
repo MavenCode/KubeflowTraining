@@ -4,4 +4,4 @@ A Katacoda scenario is a series of Markdown files, bash scripts and a JSON file 
 
 Clone our example repository that contains the set of documentation with the following command:
 
-`git clone https://github.com/katacoda/scenario-examples.git katacoda-scenario-examples`{{execute}}
+`git clone https://github.com/MavenCode/KubeflowTraining.git`{{execute}}
