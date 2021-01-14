@@ -1,9 +1,7 @@
-Within each step, a series of Markdown extensions have been created that can provide various details for the users' experience.
+A Katacoda scenario is a series of Markdown files, bash scripts and a JSON file to define how your scenario should be configured, the text for the scenario and any automation required.
 
-For example, commands such as `echo "Run in Terminal"`{{execute}}
- can be executed by clicking the command.
+## Task
 
-This is done by adding `execute` to the markdown code block, for example:
-<pre>`echo "Run in Terminal"`{{execute}}</pre>
+Clone our example repository that contains the set of documentation with the following command:
 
-More can be found at the scenario [on Markdown extensions](https://katacoda.com/scenario-examples/scenarios/markdown-extensions).
+`git clone https://github.com/katacoda/scenario-examples.git katacoda-scenario-examples`{{execute}}
