@@ -11,4 +11,4 @@ Clone our example repository that contains our scenario (in your case this repos
 
 The repository contains a sample course and a list of scenarios that I created for this experiment.
 
-****Please take note that all this can be done through your system's CLI.
+***Please take note this exercise can be done in your system's CLI.***
