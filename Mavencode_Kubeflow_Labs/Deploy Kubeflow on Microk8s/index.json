@@ -1,6 +1,6 @@
 {
-  "title": "How to deploy kubeflow on Microk8s",
-  "description": "Learn how to deploy kubeflow on Microk8s",
+  "title": "How to create your scenerio in katacoda",
+  "description": "Learn how to create your scenerio in katacoda",
   "difficulty": "Beginner",
   "time": "4 minutes",
   "details": {
