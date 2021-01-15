@@ -26,6 +26,11 @@
       "course_id": "Seldone Core",
       "title": "Seldone Core",
       "description": "Learn how to serve your models for production with Seldone Core"
+    },
+    {
+      "course_id": "test",
+      "title": "test",
+      "description": "test"
     }
   ]
 }
