@@ -1,5 +1,11 @@
 To help create the index.json and scenario structure, Katacoda has developed a command line interactive (CLI).
 
+The index.json file automatically collects all the steps in your scenario , for example, `KubeflowTraining/Mavencode_Kubeflow_Labs/New Scenario/index.json`{{open}}.
+
+This is also true for a created course, for example, `KubeflowTraining/Mavencode_Kubeflow_Labs-pathway.json`{{open}}
+
+The JSON file defines the scenario title, the description, steps order, the UI layout and environment. You can find more about the layouts within our scenarios at [katacoda.com/docs/scenarios/layouts](https://katacoda.com/docs/scenarios/layouts) and environments at [katacoda.com/docs/scenarios/environments](https://katacoda.com/docs/scenarios/environments).
+
 ## Install CLI
 
 Install the CLI with the command `npm i katacoda-cli --global`{{execute}}.
@@ -11,7 +17,7 @@ After the install has finished, the command can be run via `katacoda --help`{{ex
 
 ## Create scenario
 For example, to create a new scenario you would run the command `katacoda scenarios:create`{{execute}}. The CLI will prompt you a few questions in order to create your scenario:
-- **Friendly URL:** here you will type `test-scenario`. This attribute will determine the name of the folder of your scenario, and the URL to access it, so, should not contain spaces, should be lower case, etc. For example, if your username is *test-username* and your scenario was called *test-scenario* as suggested, the URL to point the scenario in the platform will be https://katacoda.com/test-username/scenarios/test-scenario/
+- **Friendly URL:** here you will type `test-scenario`(it could be anything you want). This attribute will determine the name of the folder of your scenario, and the URL to access it, so, should not contain spaces, should be lower case, etc. 
 - **Title:** title the scenario
 - **Description:** description of the scenario, displayed on the intro screen
 - **Difficulty level:** provide users with a sense of the depth of content, displayed on the intro screen
