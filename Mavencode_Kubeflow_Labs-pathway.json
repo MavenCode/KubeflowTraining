@@ -3,9 +3,9 @@
   "description": "This course gives you a complete walkthrough on how to conquer Kubeflow",
   "courses": [
     {
-      "course_id": "Deploy Kubeflow on Microk8s",
-      "title": "How to deploy kubeflow on Microk8s",
-      "description": "Learn how to deploy kubeflow on Microk8s"
+      "course_id": "Create your own Scenario",
+      "title": "How to create your scenario in katacoda",
+      "description": "Learn how to create your scenario in katacoda"
     },
     {
       "course_id": "Creating a Kubeflow Pipeline",
