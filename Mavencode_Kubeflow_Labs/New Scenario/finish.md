@@ -1,1 +1,5 @@
-## You are done with the course. Thank you for your time.
+## Yes, its that easy!!
+
+If you need more information on Katacoda, please go through the documentation https://www.katacoda.community/welcome.html.
+
+#### Thank you
