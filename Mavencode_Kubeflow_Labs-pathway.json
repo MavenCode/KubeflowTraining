@@ -3,7 +3,7 @@
   "description": "This course gives you a complete walkthrough on how to conquer Kubeflow",
   "courses": [
     {
-      "course_id": "Create your own Scenario",
+      "course_id": "New Scenario",
       "title": "How to create your scenario in katacoda",
       "description": "Learn how to create your scenario in katacoda"
     },
