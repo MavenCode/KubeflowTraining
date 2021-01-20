@@ -9,6 +9,8 @@ Clone our example repository that contains our scenario (in your case this repos
 
 `git clone https://github.com/MavenCode/KubeflowTraining.git`{{execute}}
 
+`cd KubeflowTraining`{{execute}}
+
 The repository contains a sample course and a list of scenarios that I created for this experiment.
 
 ***Please take note this exercise can be done in your system's CLI.***
