@@ -2,7 +2,7 @@
   "title": "Deploy Kubeflow on Microk8s",
   "description": "How to get kubeflow running on your local computer with microk8s.",
   "difficulty": "Beginner",
-  "time": "9",
+  "time": "9 minutes",
   "details": {
     "steps": [
       {
