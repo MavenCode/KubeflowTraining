@@ -13,7 +13,7 @@ You could also spercify the version you want. For example to install Microk8s in
 
 To see the versions available try 
 
-`snap info microk8s`
+`snap info microk8s`{{execute}}
 
 Now that you have installed microk8s you can view the node you just deployed.  
 
