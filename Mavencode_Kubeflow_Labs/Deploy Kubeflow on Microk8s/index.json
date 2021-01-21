@@ -47,7 +47,6 @@
     "dashboards": [{"name": "Jupyterhub", "port": 80}, {"name": "Dashboard", "port": 30080}]
   },
   "backend": {
-    "imageid": "kubernetes-kubeflow",
-    "port": 80
+    "imageid": "ubuntu:2004"
   }
 }
