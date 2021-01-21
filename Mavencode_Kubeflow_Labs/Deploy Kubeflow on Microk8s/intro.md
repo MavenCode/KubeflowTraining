@@ -4,5 +4,5 @@ This course is designed to instruct you on how you productionize your Machine Le
 from getting kubflow running on your local system to deploying your pipelines, serving your models and so on.
 
 ### We are learning about Deploying Kubeflow on Mickro8s in this scenario
-![Microk8s](https://github.com/MavenCode/KubeflowTraining/blob/master/Mavencode_Kubeflow_Labs/Deploy%20Kubeflow%20on%20Microk8s/images/Kubeflow%20Pipeline%20Training%20Document.png)
+![Microk8s](./Mavencode_Kubeflow_Labs/Deploy Kubeflow on Microk8s/images/Kubeflow Pipeline Training Document.png)
 
