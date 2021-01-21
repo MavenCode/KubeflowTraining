@@ -42,9 +42,12 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "Dashboard", "port": 30080}]
   },
   "backend": {
-    "imageid": "ubuntu:2004"
+    "imageid": "ubuntu:2004",
+    "port": 80
   }
 }
