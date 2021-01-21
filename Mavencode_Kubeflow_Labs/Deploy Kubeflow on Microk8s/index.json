@@ -42,9 +42,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "showdashboard": true,
-    "dashboards": [{"name": "Kubeflow", "port": 31380}]
+    "uilayout": "terminal" 
   },
   "backend": {
     "imageid": "ubuntu:1804"
