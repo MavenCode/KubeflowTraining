@@ -44,7 +44,7 @@
   "environment": {
     "uilayout": "terminal",
     "showdashboard": true,
-    "dashboards": [{"name": "Jupyterhub", "port": 80}, {"name": "Dashboard", "port": 30080}]
+    "dashboards": [{"name": "Kubeflow", "port": 31380}]
   },
   "backend": {
     "imageid": "ubuntu:1804"
