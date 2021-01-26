@@ -11,4 +11,4 @@ For example, commands such as `echo "Run in Terminal"`{{execute}}
 This is done by adding `execute` to the markdown code block, for example:
 <pre>`echo "Run in Terminal"`{{execute}}</pre>
 
-More can be found at the scenario [on Markdown extensions](https://katacoda.com/scenario-examples/scenarios/markdown-extensions).
+More can be found at the scenario [on Markdown extensions](https://www.katacoda.community/scenario-syntax.html#katacoda-s-markdown-extensions).
