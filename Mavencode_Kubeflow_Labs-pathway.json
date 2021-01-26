@@ -36,6 +36,11 @@
       "course_id": "Deploy Kubeflow on Microk8s",
       "title": "Deploy Kubeflow on Microk8s",
       "description": "How to get kubeflow running on your local computer with microk8s."
+    },
+    {
+      "course_id": "Kubeflow Fairing",
+      "title": "Kubeflow Fairing",
+      "description": "How to deploy a model with kubeflow fairing"
     }
   ]
 }
