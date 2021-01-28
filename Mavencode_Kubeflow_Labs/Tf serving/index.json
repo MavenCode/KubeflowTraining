@@ -6,19 +6,19 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Kubeflow environment setup",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - prepare and store a servable model",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3 - create resources and deploy model",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Step 4 - send prediction request directly",
         "text": "step4.md"
       },
       {
