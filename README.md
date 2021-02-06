@@ -8,7 +8,7 @@ systems for ML to diverse infrastructures. .
 Join epxerts from Mavencode and Canonical to learn how to Kubeflow is enabled on Microk8s, how to build real-world machine learning pipelines 
 using Kubeflow & Kale, serve your models , how Ml operators and Tf jobs work and how to tune model parameters with katib. 
 
-![](https://github.com/MavenCode/KubeflowTraining/blob/master/images/Course%20Map.png)
+
 
 ## Agenda
 
