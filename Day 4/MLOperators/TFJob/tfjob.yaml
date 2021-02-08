@@ -1,0 +1,32 @@
+apiVersion: "kubeflow.org/v1"
+kind: "TFJob"
+metadata:
+  name: "fmnist"
+  namespace: josephadmin
+spec:
+  cleanPodPolicy: None
+  tfReplicaSpecs:
+    Worker:
+      replicas: 3
+      restartPolicy: OnFailure
+      template:
+        metadata:
+          annotations:
+            sidecar.istio.io/inject: "false"
+        spec:
+          containers:
+          - name: tensorflow
+            image: josephcruisedocker8624/tfjob:6.0
+            command:
+                - "python"
+                - "/tfjob.py"
+                - "--saved_model_dir=/train/saved_model/"
+                - "--learning_rate=0.001"
+                - "--optimizer=adam"
+            volumeMounts:
+                - mountPath: "/train"
+                  name: "training"
+          volumes:
+            - name: "training"
+              persistentVolumeClaim:
+                claimName: "tfevent-volume"
