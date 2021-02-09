@@ -4,6 +4,7 @@ The operator-sdk and ansible prerequisites should be installed before following 
 Create a folder and move into it. 
 
 `mkdir example-operator`
+
 `cd example-operator `
 
 Initialize the folder
