@@ -1,0 +1,9 @@
+apiVersion: "serving.kubeflow.org/v1alpha2"
+kind: "InferenceService"
+metadata:
+  name: "churn"
+spec:
+  default:
+    predictor:
+      sklearn:
+        storageUri: "gs://mavencode-churn-model/customer-churn/churn01"
