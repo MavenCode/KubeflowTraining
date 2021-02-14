@@ -6,8 +6,8 @@ for integrating with components like Katib.
 To build and push this image for usage:
 ```shell
 docker image build -t tfjob:6.0 .
-docker tag tfjob:6.0 josephcruisedocker8624/tfjob:6.0
-docker push josephcruisedocker8624/tfjob:6.0
+docker tag tfjob:6.0 mavencodev/tfjob:6.0
+docker push mavencodev/tfjob:6.0
 ```
 
 Usage:
