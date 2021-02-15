@@ -16,7 +16,7 @@ spec:
         spec:
           containers:
           - name: tensorflow
-            image: josephcruisedocker8624/tfjob:6.0
+            image: mavencodev/tfjob:6.0
             command:
                 - "python"
                 - "/tfjob.py"
