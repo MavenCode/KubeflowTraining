@@ -23,7 +23,7 @@ debug:
 when: toggle_message
 ```
 
-Open the config/samples/cache_v1_demo.yml file and replace the `foo:bar` under the spec column with `toggle_message: true`. If it's blank just fill it with the text below.
+Open the config/samples/cache_v1_demo.yml file and replace the `foo:bar` under the spec column with `toggle_message: true`. If it's blank, just fill it with the text below.
 ```
 apiVersion: cache.demo.com/v1
 kind: Demo
