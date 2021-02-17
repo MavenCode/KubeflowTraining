@@ -13,9 +13,9 @@ Initialize the folder
 
 Generate the role files
 
-`operator-sdk create api --group cache --version v1 --kind demo --generate-role`
+`operator-sdk create api --group cache --version v1 --kind Demo --generate-role`
 
-Edit the role/demo/tasks/main.yml file and ensure it is exactly the same with the text below 
+Edit the roles/demo/tasks/main.yml file and ensure it is exactly the same with the text below 
 ```
 name:  Hello World Task
 debug:
@@ -23,7 +23,15 @@ debug:
 when: toggle_message
 ```
 
-Open the config/samples/cache_v1_demo.yml file and replace the `foo:bar` under the spec column with `toggle_message: true`.
+Open the config/samples/cache_v1_demo.yml file and replace the `foo:bar` under the spec column with `toggle_message: true`. If it's blank, just fill it with the text below.
+```
+apiVersion: cache.demo.com/v1
+kind: Demo
+metadata:
+  name: demo-sample
+spec:
+  toggle_message: true
+```
 
 Build and push the operator container to any registry of choice.
 
