@@ -17,12 +17,14 @@ using Kubeflow & Kale, serve your models , how Ml operators and Tf jobs work and
 		├── Setting up Jupyter notebook		
     ├── Day 2      
 		├── Kubeflow Pipelines     
-		├── Kale
+		
     ├── Day 3
+    		├── Kale
 		├── KF serving
+    ├── Day 4
 		├── Seldon core
 		├── TF Serving
-    ├── Day 4
+    ├── Day 5
 		├── ML Operators                
 		└── Katib
 
