@@ -12,7 +12,7 @@ This repo is part of the 5-day Kubeflow enterprise training provided by Canonica
 
 Throughout this training, experts from Mavencode and Canonical will guide you through the steps from installing Kubeflow to building real-world machine learning pipelines using Kubeflow & Kale, serve your models, how ML operators and TF jobs work and how to tune model parameters with Katib. 
 
-## Agenda
+## Training Agenda
 
     ├── Day 1
 		├── Setting up Kubeflow on Microk8s
@@ -23,7 +23,7 @@ Throughout this training, experts from Mavencode and Canonical will guide you th
 		├── Kale
 		├── KF serving
     ├── Day 4
-		├── Seldon core
+		├── Seldon Core
 		├── TF Serving
     ├── Day 5
 		├── ML Operators                
