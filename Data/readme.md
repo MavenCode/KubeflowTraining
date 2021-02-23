@@ -1,1 +1,1 @@
-The Churn Modeling data is used for our labs in Day 2 when buiding the Pytoch and Tensorflow pipelines.
+The Churn Modeling data is used for our labs in Day 2 to build the Pytorch and Tensorflow pipelines.
