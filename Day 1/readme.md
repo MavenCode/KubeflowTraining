@@ -1,8 +1,8 @@
 
 
-Day 1
+# Day 1
 
-We will go through the steps of
+We will go through the steps of :
 
 a.) Installing MicroK8s
 
