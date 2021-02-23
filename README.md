@@ -1,14 +1,14 @@
-# KubeflowTraining
+## What is Kubeflow?
 
+Kubeflow is the open source machine learning toolkit on top of Kubernetes.
 
-Kubeflow is the machine learning toolkit for Kubernetes. It is dedicated to making deployments of machine learning workflows on 
-Kubernetes simple, portable and scalable. The essence of Kubeflow is to provide a straightforward way to deploy open-source 
-systems for ML to diverse infrastructures.
+Kubernetes is the industry standard for software delivery at scale and Kubeflow provides the cloud-native interface between K8s and data science tools - libraries, frameworks, pipelines, notebooks - bringing the Ops to ML.
 
-Join experts from Mavencode and Canonical and learn how to Kubeflow is enabled on Microk8s, how to build real-world machine learning pipelines 
-using Kubeflow & Kale, serve your models, how Ml operators and Tf jobs work and how to tune model parameters with katib. 
+## Kubeflow Training
 
+This repo is part of the 5-day Kubeflow enterprise training provided by Canonical and Mavencode. 
 
+Throughout this training, experts from Mavencode and Canonical will guide you through the steps from installing Kubeflow to building real-world machine learning pipelines using Kubeflow & Kale, serve your models, how ML operators and Tf jobs work and how to tune model parameters with Katib. 
 
 ## Agenda
 
@@ -18,7 +18,7 @@ using Kubeflow & Kale, serve your models, how Ml operators and Tf jobs work and 
     ├── Day 2      
 		├── Kubeflow Pipelines     
     ├── Day 3
-                ├── Kale
+        ├── Kale
 		├── KF serving
     ├── Day 4
 		├── Seldon core
