@@ -36,7 +36,7 @@
      
      
      
-  8. Once kubeflow is sucessfully enable, log out of your vm and enable SOCK Proxy on your system
+  8. Once kubeflow is sucessfully enabled, log out of your vm and enable SOCK Proxy on your system
   
      `exit`
      
