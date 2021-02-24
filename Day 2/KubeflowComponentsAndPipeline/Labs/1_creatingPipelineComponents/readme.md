@@ -17,7 +17,7 @@ Learn how to build a kubeflow component in 2 different ways
       Change your working directory to `KubeflowTraining/Day 2/KubeflowComponentsAndPipeline/Labs/1_creatingPipelineComponents` and run the following to build the 
       docker image:
 
-      `docker build --tag=preprocess-component:v.0.2`
+      `docker build --tag=preprocess-component:v.0.2 .`
 
       `docker login`
 
