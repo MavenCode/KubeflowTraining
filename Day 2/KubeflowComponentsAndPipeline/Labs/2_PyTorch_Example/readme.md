@@ -18,14 +18,14 @@ Learn how to build a pytorch pipeline in a few steps
       
       b. Preprocess_data Function
       
-      c. Train_tensorflow Function
+      c. Train_pytorch Function
       
-      d. Predict_tensorflow Function  
+      d. Predict_pytorch Function  
       
   4. Create Kubeflow components for each step from the python functions defined above 
   
-  5. Define and Compile Kubeflo Pipeline
+  5. Define and Compile Kubeflow Pipeline
   
   6. Upload the Pipeline
 
-Find a visuall walkthrough on how the Tensorflow Lightweight Pipeline is built [here](https://drive.google.com/file/d/1ViY5o5GqR2T8TAIfsNJSVnpTtsz0wS_s/view?usp=sharing).
+Find a visuall walkthrough on how the Pytorch Lightweight Pipeline is built [here](https://drive.google.com/file/d/1wbs3I3qa61eaZuyHkgqqrg5XmzE5REeF/view?usp=sharing).
