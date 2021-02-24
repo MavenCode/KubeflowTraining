@@ -1,13 +1,13 @@
 # Day 2
 
 
-We will go through the process of
+On day 2 of the Kubeflow training we will go over the concept of Kubeflow Pipelines. To fully grasp this concept we will follow the steps below:
 
-a.) Building Kubeflow Components
+a.) Build Kubeflow Pipeline components
 
-b.) Creating a Kubeflow Pipeline from the Components
+b.) Create a Kubeflow Pipeline from the Components previously built
 
-Additional Materials for Day 2 can be found here:
+Additional materials can be found here:
 
    1. [Create lightweight and Reusable Components](https://drive.google.com/file/d/19t9AV82VjFGus1z9bpcl6d6gwoz-Cs5R/view?usp=sharing)
   
