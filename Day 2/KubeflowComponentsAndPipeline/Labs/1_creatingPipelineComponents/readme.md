@@ -12,7 +12,7 @@ Learn how to build a kubeflow component in 2 different ways
    
    `sudo snap install docker --classic`
 
-   Run the following code in your ubuntu cli before you run the notebook
+   Run the following code in your cli before you run the notebook
    
       `docker pull python:3.7.1`
       
