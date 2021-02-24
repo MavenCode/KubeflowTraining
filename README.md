@@ -16,7 +16,7 @@ Throughout this training, experts from Mavencode and Canonical will guide you th
 
     ├── Day 1
 		├── Setting up Kubeflow on Microk8s
-		├── Setting up Jupyter notebook		
+		├── Setting up Jupyter notebooks on Kubeflow 		
     ├── Day 2      
 		├── Kubeflow Pipelines     
     ├── Day 3
