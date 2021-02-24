@@ -15,6 +15,6 @@ Additional Materials for Day 2 can be found here:
     
    3. Building ML Pipelines
    
-         a.   [Pytorch](https://drive.google.com/file/d/17kifWnzyJ-9LWaKTDErOZ6JkHd1gEJ7n/view?usp=sharing)
+         a.   [Pytorch](https://drive.google.com/file/d/1wbs3I3qa61eaZuyHkgqqrg5XmzE5REeF/view?usp=sharing)
             
          b.   [Tensorflow](https://drive.google.com/file/d/1BViCOaHVh1Cj-ta_KWVmioYxLdn8loeA/view?usp=sharing)
