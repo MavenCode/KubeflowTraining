@@ -24,7 +24,7 @@ Learn how to build a tensorflow pipeline in a few steps
       
   4. Create Kubeflow components for each step from the python functions defined above 
   
-  5. Define and Compile Kubeflo Pipeline
+  5. Define and Compile Kubeflow Pipeline
   
   6. Upload the Pipeline
 
