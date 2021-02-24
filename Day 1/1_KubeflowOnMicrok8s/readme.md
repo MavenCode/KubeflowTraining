@@ -36,16 +36,18 @@
      
      
      
-  8. Once kubeflow is sucessfully enabled log out of your vm and enable SOCK Proxy
+  8. Once kubeflow is sucessfully enable, log out of your vm and enable SOCK Proxy on your system
   
      `exit`
      
      `ssh -i “key.pem” -D9999 ubuntu@......amazonaws.com`
      
+     Watch this [video](https://drive.google.com/file/d/1z9FGpzmnZgYNLAgi_GlIHPU1HOhTbLYI/view?usp=sharing) for more details on how SOCK Proxy is enabled.
      
   9. Run this ip address in your browser and fill in the dex-auth username and password given.
   
      `http://10.64.140.43.xip.io/`
   
+ 
   
   
