@@ -8,9 +8,11 @@ Learn how to build a kubeflow component in 2 different ways
 
    b. a docker image 
    
-   Run the following code in you jupyter notebook terminal before you run the notebook
+   Run the following code in your ubuntu cli before you run the notebook
    
       `docker pull python:3.7.1`
+      
+      Clone this repository `git clone https://github.com/MavenCode/KubeflowTraining.git`
       
       Change your working directory to `KubeflowTraining/Day 2/KubeflowComponentsAndPipeline/Labs/1_creatingPipelineComponents` and run the following to build the 
       docker image:
