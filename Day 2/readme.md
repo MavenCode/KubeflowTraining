@@ -9,9 +9,9 @@ b.) Creating a Kubeflow Pipeline from the Components
 
 Additional Materials for Day 2 can be found here:
 
-   1. [Create a Reusable Component](https://drive.google.com/file/d/1dmCudsm5eDiPzlo96PPZsv2OcI3iy_3S/view?usp=sharing)
+   1. [Create lightweight and Reusable Components](https://drive.google.com/file/d/19t9AV82VjFGus1z9bpcl6d6gwoz-Cs5R/view?usp=sharing)
   
-   2. [Convert a component from a yaml file](https://drive.google.com/file/d/1cQl9nF98tum1jGPcDaOUIAzwGPL0pGs9/view?usp=sharing)
+   2. [Convert a component from a yaml file](https://drive.google.com/file/d/1d8IHyai_h1c32dio3IFZPaYUyaMb_KQL/view?usp=sharing)
     
    3. Building ML Pipelines
    
