@@ -36,7 +36,7 @@
      
      
      
-  8. Once kubeflow is sucessfully enabled, log out of your vm and enable SOCK Proxy on your system
+  8. Once kubeflow is sucessfully enabled, log out of your vm and configure SOCK Proxy on your browser
   
      `exit`
      
@@ -44,9 +44,8 @@
      
      Watch this [video](https://drive.google.com/file/d/1z9FGpzmnZgYNLAgi_GlIHPU1HOhTbLYI/view?usp=sharing) for more details on how SOCK Proxy is enabled.
      
-  9. Run this ip address in your browser and fill in the dex-auth username and password given.
+  9. Now copy the Kubeflow GUI address from your terminal (e.g. http://10.64.140.43.xip.io) and paste it into Firefox URL bar.
   
-     `http://10.64.140.43.xip.io/`
   
  
   
