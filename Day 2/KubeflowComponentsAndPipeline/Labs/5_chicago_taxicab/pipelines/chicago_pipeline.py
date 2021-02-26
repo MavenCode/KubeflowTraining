@@ -3,9 +3,8 @@ from kfp import components
 
 COMPONENT_URL = 'https://raw.githubusercontent.com/MavenCode/KubeflowTraining/master/Day%202/KubeflowComponentsAndPipeline/Labs/5_chicago_taxicab/components'
 
-chicago_taxi_dataset_op = components.load_component_from_url(f'{COMPONENT_URL}/datasets/Chicago%20Taxi/component.yaml')
-pandas_transform_csv_op = components.load_component_from_url(
-    f'{COMPONENT_URL}/pandas/Transform_DataFrame/in_CSV_format/component.yaml')
+chicago_taxi_dataset_op = components.load_component_from_url(f'{COMPONENT_URL}/Chicago_Taxi_Trips/component.yaml')
+pandas_transform_csv_op = components.load_component_from_url(f'{COMPONENT_URL}/Transform_DataFrame/component.yaml')
 
 catboost_train_classifier_op = components.load_component_from_url(
     f'{COMPONENT_URL}/Train_classifier/from_CSV/component.yaml')
