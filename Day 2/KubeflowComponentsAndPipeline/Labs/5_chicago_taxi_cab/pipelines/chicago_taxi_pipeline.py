@@ -43,6 +43,8 @@ def chicago_taxi_pipeline():
     regression_model = train_regression_task.outputs['model']
 
 
-
 if __name__ == '__main__':
-    kfp.compiler.Compiler().compile(chicago_taxi_pipeline, __file__ + '02222020.zip')
+    kfp.compiler.Compiler().compile(chicago_taxi_pipeline, "chicago_taxi_pipeline.zip")
+    client = kfp.Client(host='pipelines-api.kubeflow.svc.cluster.local:8888')
+    # client.list_pipelines()
+    pipeline_info = client.upload_pipeline('chicago_taxi_pipeline-2.zip', pipeline_name='chicago_taxi_pipeline-2')
