@@ -15,7 +15,7 @@ catboost_predict_classes_op = components.load_component_from_url(
 catboost_predict_values_op = components.load_component_from_url(
     f'{COMPONENT_URL}/Predict_values/from_CSV/component.yaml')
 catboost_predict_class_probabilities_op = components.load_component_from_url(
-    f'{COMPONENT_URL}/CatBoost/Predict_class_probabilities/from_CSV/component.yaml')
+    f'{COMPONENT_URL}/Predict_class_probabilities/from_CSV/component.yaml')
 catboost_to_apple_op = components.load_component_from_url(
     f'{COMPONENT_URL}/convert_CatBoostModel_to_AppleCoreMLModel/component.yaml')
 catboost_to_onnx_op = components.load_component_from_url(
