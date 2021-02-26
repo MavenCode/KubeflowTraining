@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-image_name=rawkintrevo/visualize-dicom-output # Specify the image name here
-image_tag=0.0.11
+image_name=mavencodev/visualize-dicom-output # Specify the image name here
+image_tag=1.0.0-charles
 full_image_name=${image_name}:${image_tag}
 
 cd "$(dirname "$0")"

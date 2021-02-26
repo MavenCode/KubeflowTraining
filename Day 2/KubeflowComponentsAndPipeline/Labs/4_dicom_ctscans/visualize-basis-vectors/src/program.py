@@ -6,13 +6,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import argparse
-from google.cloud import storage
 
 parser = argparse.ArgumentParser(
     description='Convert DRMs into DICOMs and Images')
-parser.add_argument('--bucket_name',
+parser.add_argument('--directory',
                     type=str,
-                    help='name of bucket to write output to.')
+                    help='name of directory to write output to.')
 args = parser.parse_args()
 
 
@@ -58,50 +57,21 @@ def plot_2_3d_matrices(img1, img2, aspect, slice, cmap):
     a2.set_aspect(aspect)
 
 
-def upload_blob(bucket_name, source_file_name, destination_blob_name):
-    """Uploads a file to the bucket."""
-    storage_client = storage.Client()
-    bucket = storage_client.bucket(bucket_name)
-    blob = bucket.blob(destination_blob_name)
-
-    blob.upload_from_filename(source_file_name)
-
-    print("File {} uploaded to {}.".format(source_file_name,
-                                           destination_blob_name))
-
-
-def download_folder(bucket_name='your-bucket-name',
-                    bucket_dir='your-bucket-directory/',
-                    dl_dir="local-dir/"):
-    storage_client = storage.Client()
-    bucket = storage_client.get_bucket(bucket_name)
-    blobs = bucket.list_blobs(prefix=bucket_dir)  # Get list of files
-    for blob in blobs:
-        filename = blob.name.replace('/', '_')
-        blob.download_to_filename(dl_dir + filename)  # Download
-
 
 import os
 
-bucket_name = args.bucket_name
-os.mkdir('/tmp/drmU')
-os.mkdir('/tmp/drmV')
-os.mkdir('/tmp/s')
 
-download_folder(bucket_name, "drmU/", "/tmp/drmU/")
-download_folder(bucket_name, "drmV/", "/tmp/drmV/")
-download_folder(bucket_name, "s/", "/tmp/s/")
 
-drmU = read_mahout_drm("/tmp/drmU")
-drmV = read_mahout_drm("/tmp/drmV")
+drmU = read_mahout_drm("/mnt/data/drmU")
+drmV = read_mahout_drm("/mnt/data/drmV")
 
-print(os.listdir("/tmp"))
-print(os.listdir("/tmp/s"))
+print(os.listdir("/mnt/data"))
+print(os.listdir("/mnt/data/s"))
 
 drmU_p5 = np.transpose(np.array([drmU[i] for i in range(len(drmU.keys()))]))
 drmV_p5 = np.array([drmV[i] for i in range(len(drmV.keys()))])
 
-with open(f"/tmp/s/s_part-00000", 'r') as f:
+with open(f"/mnt/data/s/s_part-00000", 'r') as f:
     diags = [float(d) for d in f.read().split('\n') if d != '']
 
 recon = drmU_p5 @ np.diag(diags) @ drmV_p5.transpose()
@@ -128,5 +98,4 @@ for p in range(len(percs)):
     a1.set_aspect(1.0)
     plt.axis('off')
     fname = f"{100-(perc*100)}%-denoised-img.png"
-    plt.savefig(f"/tmp/{fname}")
-    upload_blob(bucket_name, f"/tmp/{fname}", f"/output/{fname}")
+    plt.savefig(f"/mnt/data/{fname}")

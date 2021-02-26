@@ -3,13 +3,13 @@ import numpy as np
 import pydicom
 
 import argparse
-from google.cloud import storage
+
 
 parser = argparse.ArgumentParser(description='Process DICOM Images into Vectors.')
 
 parser.add_argument('--input_dir',
                     type=str,
-                    default="/mnt/data/dicom",
+                    default="/mnt/data/dicom-covid",
                     help='Directory containing DICOM Images')
 
 

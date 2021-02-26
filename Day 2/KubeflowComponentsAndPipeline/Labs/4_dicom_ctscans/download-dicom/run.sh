@@ -21,6 +21,9 @@ ls -l
 
 unzip dicom-covid.zip -d /data/dicom-covid
 
+#rm -d /data/dicom-covid/__MACOSX 2> /dev/null
+
+
 ls -l -d /data/dicom-covid
 
 
