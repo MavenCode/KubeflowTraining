@@ -42,7 +42,7 @@
      
      `ssh -i “key.pem” -D9999 ubuntu@......amazonaws.com`
      
-     Watch this [video](https://drive.google.com/file/d/1z9FGpzmnZgYNLAgi_GlIHPU1HOhTbLYI/view?usp=sharing) for more details on how SOCK Proxy is enabled.
+     Watch this [video](https://drive.google.com/file/d/1z9FGpzmnZgYNLAgi_GlIHPU1HOhTbLYI/view?usp=sharing) for more details on how SOCK Proxy is configured.
      
   9. Now copy the Kubeflow GUI address from your terminal (e.g. http://10.64.140.43.xip.io) and paste it into Firefox URL bar.
   
