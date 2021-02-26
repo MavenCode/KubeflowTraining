@@ -1,7 +1,7 @@
 import kfp
 from kfp import components
 
-COMPONENT_URI = 'https://raw.githubusercontent.com/MavenCode/KubeflowTraining/feature/ctscan-pipeline/Day%202/KubeflowComponentsAndPipeline/Labs/5_chicago_taxi_cab/components/'
+COMPONENT_URI = 'https://raw.githubusercontent.com/MavenCode/KubeflowTraining/master/Day%202/KubeflowComponentsAndPipeline/Labs/5_chicago_taxi_cab/components'
 
 chicago_taxi_dataset_op = components.load_component_from_url(f'{COMPONENT_URI}/chicago_taxi_trips/component.yaml')
 pandas_transform_csv_op = components.load_component_from_url(f'{COMPONENT_URI}/pandas_transform_df/component.yaml')
