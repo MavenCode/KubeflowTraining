@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 image_name=mavencodev/covid-prep-dicom # Specify the image name here
-image_tag=1.0.2-charles
+image_tag=1.0.3-charles
 full_image_name=${image_name}:${image_tag}
 
 cd "$(dirname "$0")"

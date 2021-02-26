@@ -19,12 +19,12 @@ curl  https://github.com/MavenCode/KubeflowTraining/raw/feature/ctscan-pipeline/
 echo "downloaded file..."
 ls -l
 
-unzip dicom-covid.zip -d /data/dicom-covid
+unzip dicom-covid.zip -d /data/
 
 #rm -d /data/dicom-covid/__MACOSX 2> /dev/null
 
 
-ls -l -d /data/dicom-covid
+ls -l -d /data/
 
 
 

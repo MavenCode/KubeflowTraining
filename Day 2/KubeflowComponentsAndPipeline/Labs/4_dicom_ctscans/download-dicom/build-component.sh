@@ -1,7 +1,7 @@
 #!/bin/sh
 
 image_name=mavencodev/download-dicom # Specify the image name here
-image_tag=1.0.12-charles
+image_tag=1.0.13-charles
 full_image_name=${image_name}:${image_tag}
 
 cd "$(dirname "$0")"
