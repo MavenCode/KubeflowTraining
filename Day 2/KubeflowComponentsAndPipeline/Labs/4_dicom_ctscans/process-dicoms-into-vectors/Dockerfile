@@ -22,7 +22,5 @@ RUN ldconfig
 # todo move these to requirements.txt
 RUN pip install numpy
 RUN pip install scipy
-RUN pip install google-cloud-storage
 
-ENV GOOGLE_APPLICATION_CREDENTIALS="/secret/gcp-credentials/user-gcp-sa.json"
 COPY src/program.py /program.py

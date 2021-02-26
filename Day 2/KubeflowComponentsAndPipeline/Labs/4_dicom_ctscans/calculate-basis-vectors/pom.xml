@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.rawkintrevo</groupId>
+  <groupId>org.kftraining</groupId>
   <artifactId>covid</artifactId>
   <version>0.1</version>
   <inceptionYear>2020</inceptionYear>
@@ -45,20 +45,20 @@
 
     <dependency>
       <groupId>org.apache.mahout</groupId>
-      <artifactId>mahout-core_2.11</artifactId>
-      <version>14.1-SNAPSHOT</version>
+      <artifactId>mahout-core</artifactId>
+      <version>14.1</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.mahout</groupId>
-      <artifactId>mahout-hdfs_2.11</artifactId>
-      <version>14.1-SNAPSHOT</version>
+      <artifactId>mahout-hdfs</artifactId>
+      <version>14.1</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.mahout</groupId>
-      <artifactId>mahout-spark_2.11</artifactId>
-      <version>14.1-SNAPSHOT</version>
+      <artifactId>mahout-spark</artifactId>
+      <version>14.1</version>
     </dependency>
 
 
@@ -109,7 +109,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>org.rawkintrevo.covid.App</mainClass>
+              <mainClass>org.kftraining.covid.App</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

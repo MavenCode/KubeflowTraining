@@ -1,4 +1,4 @@
-package org.rawkintrevo.covid
+package org.kftraining.covid
 
 import org.apache.mahout.math._
 import org.apache.mahout.math.scalabindings._
@@ -30,7 +30,9 @@ object App {
     implicit val sdc: org.apache.mahout.sparkbindings.SparkDistributedContext = sc2sdc(sc)
 
 
-    val pathToMatrix = "gs://covid-dicoms/s.csv"  // todo make this an arg.
+    val pathToMatrix = "file:///data/dicom-covid" // "gs://covid-dicoms/s.csv"  // todo make this an arg.
+
+    //distributed stochastic singular value decomposition (DS-SVD)
 
     val voxelRDD:DrmRdd[Int]  = sc.textFile(pathToMatrix)
       .map(s => dvec( s.split(",")

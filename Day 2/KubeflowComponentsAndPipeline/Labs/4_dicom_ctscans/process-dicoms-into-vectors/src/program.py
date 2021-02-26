@@ -5,18 +5,22 @@ import pydicom
 import argparse
 from google.cloud import storage
 
-parser = argparse.ArgumentParser(
-    description='Process DICOM Images into Vectors.')
+parser = argparse.ArgumentParser(description='Process DICOM Images into Vectors.')
+
 parser.add_argument('--input_dir',
                     type=str,
                     default="/mnt/data/dicom",
                     help='Directory containing DICOM Images')
-parser.add_argument('--bucket_name',
+
+
+parser.add_argument('--output_dir',
                     type=str,
-                    help='name of bucket to write output to.')
+                    default="/mnt/data/",
+                    help='Directory to write output to.')
+
 parser.add_argument('--output_file',
                     type=str,
-                    default="s.csv",
+                    default="converted_dicom.csv",
                     help='file name of dcm converted to 2d numerical matrix')
 
 args = parser.parse_args()
@@ -50,28 +54,9 @@ def create_3d_matrix(path):
     }
 
 
-def upload_blob(bucket_name, source_file_name, destination_blob_name):
-    """Uploads a file to the bucket."""
-    # bucket_name = "your-bucket-name"
-    # source_file_name = "local/path/to/file"
-    # destination_blob_name = "storage-object-name"
-
-    storage_client = storage.Client()
-    bucket = storage_client.bucket(bucket_name)
-    blob = bucket.blob(destination_blob_name)
-
-    blob.upload_from_filename(source_file_name)
-
-    print("File {} uploaded to {}.".format(source_file_name,
-                                           destination_blob_name))
-
-
 input_dir = args.input_dir
 output_file = args.output_file
 
 m = create_3d_matrix(f"{input_dir}")
-np.savetxt("/tmp/s.csv",
-           m['img3d'].reshape((-1, m['img_shape'][2])),
-           delimiter=",")
-
-upload_blob(args.bucket_name, "/tmp/s.csv", output_file)
+np.savetxt('/mnt/data/converted_dicom.csv', m['img3d'].reshape((-1, m['img_shape'][2])), delimiter=",")
+# upload_blob(args.bucket_name, "/tmp/s.csv", output_file)

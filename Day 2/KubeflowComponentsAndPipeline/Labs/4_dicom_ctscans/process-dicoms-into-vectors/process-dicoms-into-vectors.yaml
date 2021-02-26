@@ -5,7 +5,7 @@ inputs:
   - {name: out, type: String, description='Output file name.'}
 implementation:
   container:
-    image: rawkintrevo/covid-prep-docim
+    image: mavencode/covid-prep-dicom:1.0.0-charles
     command: [
       python, /program.py,
       {inputValue:  in},

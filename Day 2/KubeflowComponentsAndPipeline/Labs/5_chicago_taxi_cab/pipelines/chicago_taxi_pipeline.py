@@ -1,7 +1,7 @@
 import kfp
 from kfp import components
 
-COMPONENT_URI = 'https://raw.githubusercontent.com/MavenCode/kfp_01/master/components'
+COMPONENT_URI = 'https://raw.githubusercontent.com/MavenCode/KubeflowTraining/feature/ctscan-pipeline/Day%202/KubeflowComponentsAndPipeline/Labs/5_chicago_taxi_cab/components/'
 
 chicago_taxi_dataset_op = components.load_component_from_url(f'{COMPONENT_URI}/chicago_taxi_trips/component.yaml')
 pandas_transform_csv_op = components.load_component_from_url(f'{COMPONENT_URI}/pandas_transform_df/component.yaml')
@@ -10,6 +10,7 @@ train_classifier_op = components.load_component_from_url(f'{COMPONENT_URI}/train
 train_regression_op = components.load_component_from_url(f'{COMPONENT_URI}/train_regression/component.yaml')
 predict_classes_op = components.load_component_from_url(f'{COMPONENT_URI}/predict_classes/component.yaml')
 predict_values_op = components.load_component_from_url(f'{COMPONENT_URI}/predict_values/component.yaml')
+
 predict_class_probabilities_op = components.load_component_from_url(
     f'{COMPONENT_URI}/predict_class_probabilities/component.yaml')
 export_model_to_AppleCoreML_op = components.load_component_from_url(
