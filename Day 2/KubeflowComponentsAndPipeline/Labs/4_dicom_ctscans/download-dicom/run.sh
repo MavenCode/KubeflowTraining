@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/sh
+
 set -e
 
 # 1st arg- case number (leading zero required if < 10), defaults to case1
@@ -13,9 +14,15 @@ fi
 
 
 echo "Downloading DICOMs"
-wget https://github.com/MavenCode/KubeflowTraining/raw/feature/ctscan-pipeline/Data/Covid-Data/dicom-covid.zip
-unzip dicom-covid.zip -d /tmp/dicom-covid
-mv /tmp/dicom-covid /data/dicom
+curl  https://github.com/MavenCode/KubeflowTraining/raw/feature/ctscan-pipeline/Data/Covid-Data/dicom-covid.zip -O -J -L
+
+echo "downloaded file..."
+ls -l
+
+unzip dicom-covid.zip -d /data/dicom-covid
+
+ls -l -d /data/dicom-covid
+
 
 
 

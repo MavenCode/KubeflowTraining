@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 image_name=mavencodev/download-dicom # Specify the image name here
-image_tag=1.0.0-charles
+image_tag=1.0.9-charles
 full_image_name=${image_name}:${image_tag}
 
 cd "$(dirname "$0")"
