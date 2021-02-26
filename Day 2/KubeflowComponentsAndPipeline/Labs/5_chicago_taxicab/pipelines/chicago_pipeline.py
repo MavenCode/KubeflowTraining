@@ -1,22 +1,29 @@
 import kfp
 from kfp import components
 
-
-COMPONENT_URL = 'https://raw.githubusercontent.com/kubeflow/pipelines/e3337b8bdcd63636934954e592d4b32c95b49129/components'
+COMPONENT_URL = 'https://raw.githubusercontent.com/MavenCode/KubeflowTraining/master/Day%202/KubeflowComponentsAndPipeline/Labs/5_chicago_taxicab/components'
 
 chicago_taxi_dataset_op = components.load_component_from_url(f'{COMPONENT_URL}/datasets/Chicago%20Taxi/component.yaml')
-pandas_transform_csv_op = components.load_component_from_url(f'{COMPONENT_URL}/pandas/Transform_DataFrame/in_CSV_format/component.yaml')
+pandas_transform_csv_op = components.load_component_from_url(
+    f'{COMPONENT_URL}/pandas/Transform_DataFrame/in_CSV_format/component.yaml')
 
-catboost_train_classifier_op = components.load_component_from_url(f'{COMPONENT_URL}/CatBoost/Train_classifier/from_CSV/component.yaml')
-catboost_train_regression_op = components.load_component_from_url(f'{COMPONENT_URL}/CatBoost/Train_regression/from_CSV/component.yaml')
-catboost_predict_classes_op = components.load_component_from_url(f'{COMPONENT_URL}/components/CatBoost/Predict_classes/from_CSV/component.yaml')
-catboost_predict_values_op = components.load_component_from_url(f'{COMPONENT_URL}/CatBoost/Predict_values/from_CSV/component.yaml')
-catboost_predict_class_probabilities_op = components.load_component_from_url(f'{COMPONENT_URL}/CatBoost/Predict_class_probabilities/from_CSV/component.yaml')
-catboost_to_apple_op = components.load_component_from_url(f'{COMPONENT_URL}/CatBoost/convert_CatBoostModel_to_AppleCoreMLModel/component.yaml')
-catboost_to_onnx_op = components.load_component_from_url(f'{COMPONENT_URL}/CatBoost/convert_CatBoostModel_to_ONNX/component.yaml')
+catboost_train_classifier_op = components.load_component_from_url(
+    f'{COMPONENT_URL}/Train_classifier/from_CSV/component.yaml')
+catboost_train_regression_op = components.load_component_from_url(
+    f'{COMPONENT_URL}/Train_regression/from_CSV/component.yaml')
+catboost_predict_classes_op = components.load_component_from_url(
+    f'{COMPONENT_URL}/Predict_classes/from_CSV/component.yaml')
+catboost_predict_values_op = components.load_component_from_url(
+    f'{COMPONENT_URL}/Predict_values/from_CSV/component.yaml')
+catboost_predict_class_probabilities_op = components.load_component_from_url(
+    f'{COMPONENT_URL}/CatBoost/Predict_class_probabilities/from_CSV/component.yaml')
+catboost_to_apple_op = components.load_component_from_url(
+    f'{COMPONENT_URL}/convert_CatBoostModel_to_AppleCoreMLModel/component.yaml')
+catboost_to_onnx_op = components.load_component_from_url(
+    f'{COMPONENT_URL}/convert_CatBoostModel_to_ONNX/component.yaml')
 
 
-def catboost_pipeline():
+def chicago_taxi_pipeline():
     training_data_in_csv = chicago_taxi_dataset_op(
         where='trip_start_timestamp >= "2019-01-01" AND trip_start_timestamp < "2019-02-01"',
         select='tips,trip_seconds,trip_miles,pickup_community_area,dropoff_community_area,fare,tolls,extras,trip_total',
@@ -74,5 +81,10 @@ def catboost_pipeline():
 
 
 if __name__ == '__main__':
-    kfp_endpoint=None
-    kfp.Client(host=kfp_endpoint).create_run_from_pipeline_func(catboost_pipeline, arguments={})
+    kfp.compiler.Compiler().compile(chicago_taxi_pipeline, "chicago_pipeline-2.zip")
+    client = kfp.Client(host='pipelines-api.kubeflow.svc.cluster.local:8888')
+    # client.list_pipelines()
+    pipeline_info = client.upload_pipeline('chicago_pipeline-2.zip', pipeline_name='chicago_pipeline-2')
+
+    # my_experiment = client.create_experiment(name='chicago_pipeline-2-experiments')
+    # my_run = client.run_pipeline(my_experiment.id, 'my-chicago-taxi-run', 'chicago_pipeline-2.zip')
