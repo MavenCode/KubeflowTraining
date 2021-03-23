@@ -1,6 +1,6 @@
 # Demo
 
-Learn how a model is served with KF Serving from this [video illutrstion](https://drive.google.com/file/d/136bBpDenl1bcgTkqysIcMNSrmcsZV_cK/view?usp=sharing).
+Learn how a model is served with KF Serving.
 The materials would teach you how to:
 
       1. Export an ML model
