@@ -1,0 +1,60 @@
+apiVersion: "kubeflow.org/v1alpha3"
+kind: Experiment
+metadata:
+  namespace: demo01
+  name: tfjob-e2311
+spec:
+  parallelTrialCount: 3
+  maxTrialCount: 12
+  maxFailedTrialCount: 3
+  objective:
+    type: maximize
+    goal: 0.99
+    objectiveMetricName: accuracy
+  algorithm:
+    algorithmName: random
+  metricsCollectorSpec:
+    kind: StdOut
+  parameters:
+    - name: learning_rate
+      parameterType: double
+      feasibleSpace:
+        min: "0.001"
+        max: "0.005"
+    - name: optimizer
+      parameterType: categorical
+      feasibleSpace:
+        list:
+          - rmsprop
+          - adam
+  trialTemplate:
+    primaryContainerName: tensorflow
+    trialParameters:
+      - name: learningRate
+        description: Learning rate for the training model
+        reference: learning_rate
+      - name: optimizer
+        description: Training model optimizer (sdg, adam)
+        reference: optimizer
+    trialSpec:
+      apiVersion: "kubeflow.org/v1"
+      kind: TFJob
+      spec:
+        tfReplicaSpecs:
+          Worker:
+            replicas: 1
+            restartPolicy: OnFailure
+            template:
+              metadata:
+                annotations:
+                  sidecar.istio.io/inject: "false"
+              spec:
+                containers:
+                  - name: tensorflow
+                    image: mavencodev/tfjob:6.0
+                    command:
+                      - "python3"
+                      - "/tfjob.py"
+                      - "--batch_size=150"
+                      - "--learning_rate=${trialParameters.learningRate}"
+                      - "--optimizer=${trialParameters.optimizer}"
