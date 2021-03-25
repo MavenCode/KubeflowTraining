@@ -1,7 +1,7 @@
 # Day 5
 
 
-On day 5 of the Kubeflow training we will go over the concept of Katib for Hyperparameter Tuning. To fully grasp this concept we will follow the steps below:
+On day 5 of the Kubeflow training we will go over the concept of Katib for Hyperparameter Tuning.
 
       a.) Build a katib experiment
 
