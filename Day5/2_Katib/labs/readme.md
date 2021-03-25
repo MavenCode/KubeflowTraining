@@ -5,7 +5,7 @@ On day 5 of the Kubeflow training we will go over the concept of Katib for Hyper
       
       a.) Train your model
       
-      b.) Build a Docker image for your job
+      b.) Build a Docker image for your job/operator with the training file
       
       c.) Run your Job
       
